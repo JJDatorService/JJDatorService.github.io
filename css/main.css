@@ -1,0 +1,27 @@
+body{
+	position: relative;
+}
+
+img {
+    border-radius: 50%;
+    width: 20%;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, .5);
+}
+
+#profile1 {
+	display: block;
+	margin-left: 20%;
+	/*margin-right: 80%;*/
+
+}
+
+#profile2 {
+	display: block;
+	/*float: left;*/
+}
+
+#img2 {
+	margin: 0px;
+	padding: 0px;
+	float: left;
+}
