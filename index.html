@@ -2,20 +2,28 @@
 <html class="no-js" lang="en">
 
 <head>
+<!--    Meta tags-->
     <meta charset="utf-8">
-    <title>Twitter Bootstrap Parallax Tutorial</title>
-    <meta name="description" content="Twitter Bootstrap Parallax Tutorial with HTML5 / CSS3 / JavaScript">
-    <meta name="author" content="Untame.net">
+    <meta name="description" content="JJ Dator Service - Support | Felsökning | Reperation">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>JJ Dator Service</title>
+    
+<!--  CSS Links  -->
     <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
     <link href="css/bootstrap-theme.min.css" rel="stylesheet" media="screen">
     <link href="css/main.css" rel="stylesheet">
+
+<!--    Javascript links-->
     <script src="js/jquery-1.12.0.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/init.js"></script>
     <script src="js/function.js"></script>
+    
+<!--    CSS Style code-->
     <style type="text/css">
     #intro {
-        /*background: url(images/intro.png) 50% 0 fixed; */
+/*        background: url(images/intro.png) 50% 0 fixed; */
         background-color: #4CAF50;
         color: white;
         height: auto;
@@ -33,7 +41,7 @@
         width: 100%;
         position: relative;
         box-shadow: 0 0 50px rgba(0, 0, 0, 0.8);
-        padding: 200px 0;
+        padding: 100px 0;
     }
     
     #home {
@@ -82,10 +90,11 @@
 </head>
 <!-- TODO: add scrollspy -->
 <body>
+<!--    Navigation Bar-->
     <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="container-fluid">
             <div class="navbar-header">
-                <a class="navbar-brand" href="#">JJ Dator Service</a>
+                <a class="navbar-brand" href="#" onclick="changeMainLink(link1)">JJ Dator Service</a>
             </div>
             <ul class="nav navbar-nav navbar-right">
             	<li id="link1" class="active"><a href="#intro" onclick="changeMainLink(link1)">Home</a></li>
@@ -106,53 +115,40 @@
             </div>
         </div>
     </section>
-
-
-    <!-- Team Section -->
-    <!-- <section id="team" data-speed="4" data-type="background">
+    
+<!--    The Team-->
+    <section id="team" data-speed="4" data-type="background">
         <div class="container">
-            <div class="row-fluid">
-                <div class="span1 well">
-                    <p>text to image</p>
+            <div class="row" style="color: white;">
+                <h1 class="text-center">The Team</h1>
+                <div class="col-md-6">
+                    <img class="img-rounded pull-right" style="width:150px; height:150px; margin-left:10px;" src="http://www.gravatar.com/avatar/7149d5d659b10de5c84664b8227e089f?s=150" />
+                    <p class="pull-right">Lägg till text om mig själv och min roll i företaget</p>
                 </div>
-                <div>
-                    <img id="profile1" src="http://www.gravatar.com/avatar/7149d5d659b10de5c84664b8227e089f?s=300">
+                <div class="col-md-6">
+                    <img class="img-rounded pull-left" style='width:150px; height:150px; margin-right:10px;' src="http://www.gravatar.com/avatar/000?s=150" />
+                    <p>Jag heter jesper stensson och är 18år. Jag är frammåt och trevlig, vilket är en bra egenskap när det kommer till kund bemötande. Vilket blir min starka sida för företaget.</p>
                 </div>
-                <div>
-                    <img id="profile2" src="http://www.gravatar.com/avatar/7149d5d659b10de5c84664b8227e089f?s=300">
-                </div> -->
-                <!-- <div id="imgText" class="span4 well">
-					<p>Some text to the image</p>
-				</div>
-				<div class="span4">
-					<img src="http://www.gravatar.com/avatar/7149d5d659b10de5c84664b8227e089f?s=300" class="img-circle">
-				</div>
-				<div id="img2" class="span4">
-					<img src="http://www.gravatar.com/avatar/7149d5d659b10de5c84664b8227e089f?s=300" class="img-circle">
-				</div>
-				<div class="span4 well">
-					<p>Some text about next image</p>
-				</div> -->
-       <!--      </div>
+            </div>
         </div>
-    </section> -->
+    </section>
 
     <section id="home" data-speed="4" data-type="background">
         <div class="container">
             <div class="row">
-                <div class="col-lg-4 well">
+                <div class="col-md-4 well">
                     <h2>Heading</h2>
                     <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque cursus nisl consectetur et.</p>
                     <p><a class="btn btn-success" href="#">View details &raquo;</a></p>
                 </div>
                 <!-- /.span4 -->
-                <div class="col-lg-4 well">
+                <div class="col-md-4 well">
                     <h2>Heading</h2>
                     <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
                     <p><a class="btn btn-success" href="#">View details &raquo;</a></p>
                 </div>
                 <!-- /.span4 -->
-                <div class="col-lg-4 well">
+                <div class="col-md-4 well">
                     <h2>Heading</h2>
                     <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum odio, dapibus ac in, massa justo sit amet.</p>
                     <p><a class="btn btn-success" href="#">View details &raquo;</a></p>
@@ -161,97 +157,12 @@
             </div>
         </div>
     </section>
-    <section id="vocaloid" data-speed="4" data-type="background">
-        <div class="container">
-            <div class="row-fluid">
-                <div class="span6 well">
-                    <h2>Heading</h2>
-                    <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque cursus nisl consectetur et.</p>
-                    <p><a class="btn btn-success" href="#">View details &raquo;</a></p>
-                </div>
-                <!-- /.span6 -->
-                <div class="span6 well">
-                    <h2>Heading</h2>
-                    <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque cursus nisl consectetur et.</p>
-                    <p><a class="btn btn-success" href="#">View details &raquo;</a></p>
-                </div>
-                <!-- /.span6 -->
-            </div>
-        </div>
-    </section>
-    <!-- Section #3 -->
+
+<!--FOOTER-->
     <section id="about" data-speed="2" data-type="background">
         <div class="container">
-            <div class="page-header">
-                <h1>Final Section Headline <small>Some subtext goes here...</small></h1>
-            </div>
-            <div class="row-fluid">
-                <div class="span4">
-                    <h2>More Details</h2>
-                    <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque cursus nisl consectetur et.</p>
-                    <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque cursus nisl consectetur et.</p>
-                    <p><a class="btn btn-success">View details &raquo;</a></p>
-                </div>
-                <!-- /.span4 -->
-                <div class="span4">
-                    <h2>Heading</h2>
-                    <div class="media">
-                        <a class="pull-left" href="#">
-                            <img class="media-object" src="images/check.png">
-                        </a>
-                        <div class="media-body">
-                            <h4 class="media-heading">Media heading</h4> Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante.
-                        </div>
-                    </div>
-                    <div class="media">
-                        <a class="pull-left" href="#">
-                            <img class="media-object" src="images/check.png">
-                        </a>
-                        <div class="media-body">
-                            <h4 class="media-heading">Media heading</h4> Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante.
-                        </div>
-                    </div>
-                    <div class="media">
-                        <a class="pull-left" href="#">
-                            <img class="media-object" src="images/check.png">
-                        </a>
-                        <div class="media-body">
-                            <h4 class="media-heading">Media heading</h4> Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante.
-                        </div>
-                    </div>
-                </div>
-                <!-- /.span4 -->
-                <div class="span4">
-                    <h2>Log In</h2>
-                    <form class="form">
-                        <div class="control-group">
-                            <label class="control-label" for="inputEmail">Email</label>
-                            <div class="controls">
-                                <input type="text" id="inputEmail" placeholder="Email">
-                            </div>
-                        </div>
-                        <div class="control-group">
-                            <label class="control-label" for="inputPassword">Password</label>
-                            <div class="controls">
-                                <input type="password" id="inputPassword" placeholder="Password">
-                            </div>
-                        </div>
-                        <div class="control-group">
-                            <div class="controls">
-                                <label class="checkbox">
-                                    <input type="checkbox"> Remember me
-                                    <br>
-                                    <br>
-                                </label>
-                                <button type="submit" class="btn btn-success">Sign in</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-                <!-- /.span4 -->
-            </div>
+            <h1>Footer</h1>
         </div>
     </section>
 </body>
-
 </html>
