@@ -33,6 +33,17 @@
         box-shadow: 0 0 50px rgba(0, 0, 0, 0.8);
         padding: 100px 0;
     }
+        
+    #offers {
+        background-color: #BA68C8;
+        height: auto;
+        margin: 0 auto;
+        width: 100%;
+        position: relative;
+        box-shadow: 0 0 50px rgba(0, 0, 0, 0.8);
+        padding: 100px 0;
+    }
+    
     
     #team {
         background-color: #E91E63;
@@ -44,26 +55,17 @@
         padding: 100px 0;
     }
     
-    #home {
-        background: url(images/home.jpg) 50% 0 fixed;
+    #location {
+/*        background: url(images/home.jpg) 50% 0 fixed;*/
+        background-color: lightgrey;
         height: auto;
         margin: 0 auto;
         width: 100%;
         position: relative;
         box-shadow: 0 0 50px rgba(0, 0, 0, 0.8);
-        padding: 200px 0;
+        padding: 50px 0;
     }
-    
-    #vocaloid {
-        background: url(images/vocaloid.jpg) 50% 0 fixed;
-        height: auto;
-        margin: 0 auto;
-        width: 100%;
-        position: relative;
-        box-shadow: 0 0 50px rgba(0, 0, 0, 0.8);
-        padding: 100px 0;
-    }
-    
+        
     #about {
         background: url(images/about.png) 50% 0 fixed;
         height: auto;
@@ -97,9 +99,10 @@
                 <a class="navbar-brand" href="#" onclick="changeMainLink(link1)">JJ Dator Service</a>
             </div>
             <ul class="nav navbar-nav navbar-right">
-            	<li id="link1" class="active"><a href="#intro" onclick="changeMainLink(link1)">Home</a></li>
-		    	<li id="link2"><a href="#vocaloid" onclick="changeMainLink(link2)">Price</a></li>
-		    	<li id="link3"><a href="#team" onclick="changeMainLink(link3)">About</a></li>
+            	<li id="link1" class="active"><a href="#intro" onclick="changeMainLink(link1)">Hem</a></li>
+            	<li id="link2"><a href="#offers" onclick="changeMainLink(link2)">Tjänster</a></li>
+		    	<li id="link3"><a href="#vocaloid" onclick="changeMainLink(link3)">Priser</a></li>
+		    	<li id="link4"><a href="#team" onclick="changeMainLink(link4)">Teamet</a></li>
             </ul>
         </div>
     </div>
@@ -115,6 +118,47 @@
             </div>
         </div>
     </section>
+    
+<!--    Offer-->
+    <section id="offers" data-speed="4" data-type="background">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-md-offset-0">
+                       <div class="col-md-3 well" style="margin-right:125px;">
+                        <h4 class="text-center" style="margin-top:0px;">Lorem Ipsum</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin</p>
+                    </div>
+                    <div class="col-md-3 well" style="margin-right:125px;">
+                        <h4 class="text-center" style="margin-top:0px;">Lorem Ipsum</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin</p>
+                    </div>
+                    <div class="col-md-3 well">
+                        <h4 class="text-center" style="margin-top:0px;">Lorem Ipsum</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 col-md-offset-2">
+                    <div class="col-md-3 well" style="margin-right:130px;">
+                        <h4 class="text-center" style="margin-top:0px;">Lorem Ipsum</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin</p>
+                    </div>
+                    <div class="col-md-3 well" style="margin-right:25px;">
+                        <h4 class="text-center" style="margin-top:0px;">Lorem Ipsum</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-md-offset-4 well" style="position: relatvie; left:23px;">
+                    <h4 class="text-center" style="margin-top:0px;">Lorem Ipsum</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
     
 <!--    The Team-->
     <section id="team" data-speed="4" data-type="background">
@@ -133,6 +177,25 @@
         </div>
     </section>
 
+<!--    Location-->
+    <section id="location" data-speed="4" data-type="background">
+        <div class="container-fluid" style="margin-left:10px; margin-right:10px;">
+            <div class="row">
+                <div class="col-md-12" style="padding: 0px; margin:0px;">
+                    <div>
+                        <div class="col-md-4 col-md-offset-1" style="height:350px; width: 350px; background: rgba(0, 255, 0, 0.4);">
+                            <p class="text-center" style="position:relative; top:40%;">Add Google Map</p>
+                        </div>
+                        <div class="col-md-4" style="margin-left: 10px; position: relative; top: 125px;">
+                            <p>Information om vart skolan ligger och vart vi har våran helpdesk</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+<!--
     <section id="home" data-speed="4" data-type="background">
         <div class="container">
             <div class="row">
@@ -141,22 +204,20 @@
                     <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque cursus nisl consectetur et.</p>
                     <p><a class="btn btn-success" href="#">View details &raquo;</a></p>
                 </div>
-                <!-- /.span4 -->
                 <div class="col-md-4 well">
                     <h2>Heading</h2>
                     <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
                     <p><a class="btn btn-success" href="#">View details &raquo;</a></p>
                 </div>
-                <!-- /.span4 -->
                 <div class="col-md-4 well">
                     <h2>Heading</h2>
                     <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum odio, dapibus ac in, massa justo sit amet.</p>
                     <p><a class="btn btn-success" href="#">View details &raquo;</a></p>
                 </div>
-                <!-- /.span4 -->
             </div>
         </div>
     </section>
+-->
 
 <!--FOOTER-->
     <section id="about" data-speed="2" data-type="background">
