@@ -1,6 +1,5 @@
 <!doctype html>
 <html class="no-js" lang="en">
-
 <head>
 <!--    Meta tags-->
     <meta charset="utf-8">
@@ -63,7 +62,7 @@
         width: 100%;
         position: relative;
         box-shadow: 0 0 50px rgba(0, 0, 0, 0.8);
-        padding: 50px 0;
+        padding: 50px 0 100px;
     }
         
     #about {
@@ -91,7 +90,7 @@
     </style>
 </head>
 <!-- TODO: add scrollspy -->
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="150">
 <!--    Navigation Bar-->
     <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="container-fluid">
@@ -99,10 +98,10 @@
                 <a class="navbar-brand" href="#" onclick="changeMainLink(link1)">JJ Dator Service</a>
             </div>
             <ul class="nav navbar-nav navbar-right">
-            	<li id="link1" class="active"><a href="#intro" onclick="changeMainLink(link1)">Hem</a></li>
-            	<li id="link2"><a href="#offers" onclick="changeMainLink(link2)">Tjänster</a></li>
-		    	<li id="link3"><a href="#vocaloid" onclick="changeMainLink(link3)">Priser</a></li>
-		    	<li id="link4"><a href="#team" onclick="changeMainLink(link4)">Teamet</a></li>
+                <li><a href="#intro">Start</a></li>
+            	<li><a href="#offers">Tjänster &amp; Priser</a></li>
+                <li><a href="#team">Teamet</a></li>
+		    	<li><a href="#location">Hitta till oss</a></li>
             </ul>
         </div>
     </div>
@@ -183,10 +182,10 @@
             <div class="row">
                 <div class="col-md-12" style="padding: 0px; margin:0px;">
                     <div>
-                        <div class="col-md-4 col-md-offset-1" style="height:350px; width: 350px; background: rgba(0, 255, 0, 0.4);">
-                            <p class="text-center" style="position:relative; top:40%;">Add Google Map</p>
+                        <div class="col-md-4 col-md-offset-1" style="height:350px; width: 350px;">
+                            <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0"width="380" height="380" src="https://maps.google.com/maps?hl=en&q=viskastrands gymnasiet&ie=UTF8&t=m&z=13&iwloc=B&output=embed"></iframe>
                         </div>
-                        <div class="col-md-4" style="margin-left: 10px; position: relative; top: 125px;">
+                        <div class="col-md-4" style="margin-left: 45px; position: relative; top: 125px;">
                             <p>Information om vart skolan ligger och vart vi har våran helpdesk</p>
                         </div>
                     </div>
